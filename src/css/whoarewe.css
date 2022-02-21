@@ -1,0 +1,179 @@
+/************/
+/** return **/
+.return{
+    background-color: bisque;
+    height:300px;
+}
+
+/********************/
+/** whoFinance **/
+.carbonBank{
+    height:500px;
+    overflow: hidden;
+    z-index: 10;
+    background-image: url("../media/img/eco_protect_nature_02_1920.jpg");
+}
+
+.carbonBank h3{
+    z-index: 10;
+    margin-bottom: 50px;
+    z-index: 100;
+    color: white;
+}
+
+.carbonBank p{
+    font-size: 25px;
+    color:white;
+}
+
+/**********************/
+/** depositeBenefits **/
+.depositeTogether{
+    background-color: #59E170;
+    flex-direction: column;
+}
+
+.depositeTogether h3{
+    margin-bottom: 70px;
+    color:#2C55A7;
+}
+
+.depositeTogether div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.depositeTogether div article{
+    width:30%;
+    
+}
+.depositeTogether div article p{
+    font-size: 18px;
+    color:black;
+}
+.depositeTogether div article h5{
+    
+    margin-bottom: 20px;
+}
+
+/*************/
+/**checklist**/
+.projetDev{
+    flex-direction:column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projetDev h3{
+    margin-bottom: 50px;
+}
+
+.projetDev article{
+    margin: auto;
+    width: 70%;
+}
+
+.projetDev ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width:60%;
+}
+
+.projetDev ul li{
+    margin:0 20px;
+    margin-top: 70px;
+    text-align: center;
+    list-style-type:square;
+}
+
+
+/*************************/
+
+.ServiceBuyer{
+    background-color:#62C6C9;
+    color:white;
+}
+
+.ServiceBuyer h3{
+    margin-bottom: 50px;
+}
+
+.ServiceBuyer ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    width:70%;
+}
+
+.ServiceBuyer ul li{
+    width: 33%;
+    margin:0 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/***************/
+
+.ServiceSeller h3{
+    margin-bottom: 50px;
+}
+
+.ServiceSeller ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    width:70%;
+}
+
+.ServiceSeller ul li{
+    width: 33%;
+    margin:0 40px;
+    margin-top: 70px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* picto **/
+
+.pictoWho{
+    min-height:30px;
+    min-width:30px;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+
+.pictoNetwork{
+    background-image:url("../media/picto/picto_network_01.svg");
+}
+
+.pictoRisk{
+    background-image:url("../media/picto/picto_protection_01.svg");
+}
+
+.pictoAssistanc{
+    background-image:url("../media/picto/picto_exchange_01.svg");
+}
+
+.pictopartners{
+    background-image:url("../media/picto/picot_partner_01.svg");
+}
+
+/***************/
+
+.whoCenter{
+    background-color:#2C55A7;
+    color:white;
+}

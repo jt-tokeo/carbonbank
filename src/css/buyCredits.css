@@ -1,0 +1,35 @@
+.sectionBuyCredit{
+   
+    width:100%;
+    height: calc(100vh - 180px); 
+    padding: 90px 0 90px 0;
+    overflow: hidden;
+    background-image: url("../media/img/img_landscape_wood.jpg");
+}
+
+.sectionBuyCredit h3, .sectionBuyCredit p{
+  color:white;
+  margin-bottom: 40px;
+}
+
+.boxbutton{
+    width:400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.sectionBuyCredit button{
+  padding: 0 20px;
+}
+
+.sectionBuyCredit img{
+  z-index: 1;
+}
+
+.oui{
+  width:100%;
+  height:300px;
+}
+

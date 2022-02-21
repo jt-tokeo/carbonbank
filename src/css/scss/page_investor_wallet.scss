@@ -1,0 +1,175 @@
+.boxBalance00 {
+    padding: 10px;
+
+    div {
+        background-color: $colorgreen3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-radius: $borderRadius15;
+        padding: 10px;
+        width: calc(100% - 20px);
+
+        &:last-child {
+            margin-top: 20px;
+        }
+
+        p {
+            color: $colorgreen0;
+            font-family: Poppins SemiBold;
+            font-size: $fontSize03;
+        }
+    }
+}
+
+/*******wallet*******/
+
+.InvestorBox00 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.InvestorBox01 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: calc(60% - 20px);
+    margin-left: 20px;
+}
+
+.boxBalance00 {
+    width: 100%;
+    height: auto;
+}
+
+.boxExchange {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .boxInput00 input[type=text] {
+        text-align: center;
+        border-radius: 50px;
+        border:1px solid #3ED17D;
+    }
+
+    .select00 {
+        margin-top: 20px;
+        margin:auto;
+        width: 140px;
+    }
+
+    .select01 {
+        margin-right: 20px;
+        width: 140px;
+        text-align: center;
+        margin-left:20px;
+    }
+
+    .pictoExchange{
+        background-image: $pictoechange0;
+        @extend .pictoCenter20;
+        margin:auto;
+        margin-bottom:12px;
+    }
+}
+
+.boxHsitory00 {
+    width: 100%;
+
+    .BoxTitle{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+
+        h5{
+            margin:0;
+        }
+
+        p{
+            font-family: Poppins Regular;
+
+            &:last-child{
+                font-family: Poppins SemiBold;
+                color:$colorgreen2;
+            }
+        }
+    }
+
+    .boxlist00 {
+        width: 100%;
+        overflow: auto;
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+
+
+        .listHistory00 {
+            background-color: $colorgreen3;
+            border-radius: $borderRadius15;
+            padding: 5px 20px;
+            display: flex;
+            width: calc(100% - 40px);
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            transition-duration: 0.3s;
+
+            margin-bottom: 7px;
+
+            .pictobuy00 {
+                background-image: $pictobuy0;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                font-family: Poppins SemiBold;
+            }
+
+            .boxBuy {
+                p:first-child {
+                    font-family: Poppins Regular;
+                    font-size: $fontSize01;
+                }
+            }
+
+            .boxDate00 {
+                text-align: right;
+                p {
+                    font-family: Poppins Regular;
+                    font-size: $fontSize01;
+                }
+            }
+
+            .select01:hover{
+                background-color:$colorgreen3;
+                color:$colorgreen0;
+            }
+
+            &:hover {
+                background-color: $colorgreen2;
+                cursor: pointer;
+
+                p {
+                    color: white;
+
+                    &:nth-child(2) {
+                        color: $colorgreen0;
+                    }
+                }
+
+                button{
+                    background-color: $colorgreen0;
+                }
+            }
+        }
+    }
+}

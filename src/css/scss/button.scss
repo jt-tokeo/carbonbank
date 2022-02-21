@@ -1,0 +1,151 @@
+/***icon before**/
+
+.iconBefore00{
+    $pictoDimension: 17px;
+    content: "";
+    display: block;
+    background-size: $pictoDimension;
+    background-repeat: no-repeat;
+    height: $pictoDimension;
+    width: $pictoDimension;
+}
+
+.iconBefore01{
+    $pictoDimension: 22px;
+    content: "";
+    display: block;
+    background-size: $pictoDimension;
+    background-repeat: no-repeat;
+    height: $pictoDimension;
+    width: $pictoDimension;
+}
+
+.iconBefore02{
+    $pictoDimension: 13px;
+    content: "";
+    display: block;
+    background-size: $pictoDimension;
+    background-repeat: no-repeat;
+    height: $pictoDimension;
+    width: $pictoDimension;
+}
+
+
+/**search bar**/
+
+.search00 {
+    width: 250px;
+    height: 30px;
+    background-color: $colorgreen2;
+    font-family: Poppins SemiBold;
+    border: none;
+
+    &:focus {
+        border: none;
+        background-color: $colorgreen0;
+    }
+}
+
+.icon-search {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: $colorgreen2;
+    border-radius: $borderRadius15;
+    padding-left: 20px;
+}
+
+.icon-search:before {
+    @extend .iconBefore00;
+    background-image: $pictosearch0;
+
+    .search00 {
+        margin-left: 40px;
+    }
+}
+
+
+/**select**/
+
+.select00 {
+    font-family: Poppins SemiBold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 3px;
+    background-color: $colorgreen1;
+    color: $colorwhite;
+    height: auto;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $colorgreen2;
+    }
+    a{
+        color: white;
+    }
+}
+
+.select01 {
+    @extend .fontNatif01;
+    padding: 5px 10px;
+    border-radius: $borderRadiusNav;
+    border-width: 0;
+    font-size: $fontSizeNav;
+    font-weight: 700;
+    background-color: $colorgreen2;
+    color: $colorwhite;
+    transition-duration: 0.4s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $colorgreen1;
+        color: $colorwhite;
+    }
+
+    &:active {
+        background-color: $colorgreen1;
+        color: $colorwhite;
+    }
+
+    option {
+        @extend .fontNatif01;
+        font-size: $fontSizeNav;
+        font-weight: 700;
+    }
+}
+
+/*bloc suivie*/
+.buttonSuivie {
+    @extend .fontNatif01;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 20px;
+    padding: 5px 10px;
+    background-color: $colorgreen1;
+    color: $colorwhite;
+    border-top-right-radius: $borderRadius15;
+    border-bottom-right-radius: $borderRadius15;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.buttonSuivieOff {
+    @extend .buttonSuivie;
+    opacity: 0.5;
+}
+
+/**button copy**/
+
+.buttonCopy {
+    @extend .select01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 15px;
+
+    &:before {
+        padding-left:15px ;
+        @extend .iconBefore02;
+        background-image: $pictocopy0;
+    }
+}

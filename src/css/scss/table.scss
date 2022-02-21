@@ -1,0 +1,74 @@
+.boxTableShadow{
+  height:calc(100vh - 135px);
+  width: 100%;
+  padding:20px;
+  @extend .stylegraph;
+}
+
+.boxTable{
+  height:100%;
+  overflow:auto;
+  width: 100%;
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead{
+    border-radius: $borderRadius15;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  tbody{
+    tr{
+      border-bottom: 1px solid $colorgreen2;
+    }
+  }
+
+  td{
+    padding:15px 15px;
+    font-family: Poppins Regular;
+    font-size: $fontSize02;
+  }
+  
+  th {
+    text-align: left;
+    padding-left: 20px ;
+    font-size: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-top:25px;
+    color:$colorgreen0;
+    background-color: $colorgreen3;
+    height:60px;
+    top: 0;
+    z-index: 2;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:first-child{
+      border-top-left-radius: $borderRadius15;
+    }
+
+    &:last-child{
+      border-top-right-radius:$borderRadius15;
+    }
+  }
+}
+
+.boxTable01{
+  @extend .boxTable;
+  height: 200px;
+}
+
+.boxTableShadowDev{
+  width:100%;
+  height:calc(100vh - 330px);
+  padding:20px;
+  @extend .stylegraph;
+}
+

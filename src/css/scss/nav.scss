@@ -1,0 +1,102 @@
+/*** nav investor***/
+
+.iconBefore {
+    margin-right: 10px;
+    $pictoDimension: 17px;
+    display: block;
+    content: " ";
+    background-image: $pictodashboard0;
+    background-size: $pictoDimension;
+    height: $pictoDimension;
+    width: $pictoDimension;
+}
+
+.navInvestor {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 100px) !important;
+    padding: 20px;
+    padding-top: 45px;
+    width: calc(310px - 40px);
+    background-color: $colorgreen3;
+
+    ul {
+        li {
+            font-family: Poppins SemiBold, sans-serif;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: $borderRadiusNav;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: $colorgreen2;
+
+                a {
+                    color: $colorwhite;
+                }
+            }
+
+            a, #investor, #pro {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                color: $colorgreen0;
+
+                &:before {
+                    @extend .iconBefore;
+                    background-image: $pictodashboard0;
+                }
+            }
+
+            .liWallet:before {
+                @extend .iconBefore;
+                background-image: $pictowallet0;
+            }
+
+            .liStack:before {
+                @extend .iconBefore;
+                background-image: $pictostack0;
+            }
+
+            .liTrans:before {
+                @extend .iconBefore;
+                background-image: $pictotransaction0;
+            }
+
+            .liOffse:before {
+                @extend .iconBefore;
+                background-image: $pictooffset0;
+            }
+
+            .liCerti:before {
+                @extend .iconBefore;
+                background-image: $pictocertificate0;
+            }
+
+            .liDevel:before {
+                @extend .iconBefore;
+                background-image: $pictodeveloper0;
+            }
+
+            .liAccou:before {
+                @extend .iconBefore;
+                background-image: $pictoaccountsetting0;
+            }
+        }
+    }
+
+    .menuLinkInvestorDown{
+        &:last-child{
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.colorChoose{
+    background-color: $colorgreen2;
+    color: $colorwhite;
+}

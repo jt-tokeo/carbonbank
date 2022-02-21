@@ -1,0 +1,191 @@
+.mainInvestor{
+    //width:calc(100vw - 610px);
+    padding:40px 140px;
+    margin-left: 210px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Poppins SemiBold;
+
+   section{
+    max-width: none;
+    padding:0;
+    margin-bottom: 20px;
+   }
+
+    h5, h4, h2{
+        font-family: Poppins SemiBold;
+    }
+
+    h5{
+        font-size: $fontSize03;
+    }
+}
+
+@media screen and (max-width:$screen-08){
+    .mainInvestor{
+        width:calc(100vw - 520px);
+        padding:20px 100px;
+    }
+}
+
+@media screen and (max-width:$screen-09){
+    .mainInvestor{
+        width:calc(100vw - 340px);
+        padding:20px 10px;
+    }
+}
+
+/**main wallet**/
+
+.mainInvestorDashboard, .mainOffset, .mainInvestorCertificate, .mainInvestorTransaction, .mainInvestorDev{
+     section{
+        width:100%;
+    }
+}
+
+
+.mainInvestorWallet{
+    article{
+        margin-bottom: 20px;
+    }
+}
+
+/*** PAGE Certificater***/
+
+.mainInvestorCertificate{
+   .InvestorBox00{
+       flex-wrap: nowrap;
+
+       article{
+           width: calc(50% - 10px);
+
+           &:first-child{
+               margin-right: 20px;
+           }
+       }
+   }
+}
+
+/** account page**/
+
+.mainInvestorAccount{
+    .boxTable{
+        height: 200px;
+    }
+
+    .accountCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top:10px;
+    }
+}
+
+/*stacking***/
+
+.mainInvestorStacking{
+    article{
+        margin-bottom: 20px;
+    }
+}
+
+/**page investor***/
+
+.mainInvestorTransaction{
+    .navfilter00{
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .boxTable{
+        height:calc(100% - 100px);
+    }
+}
+
+/**offset***/
+.mainOffset{
+
+    .boxEstimate{
+        padding:10px;
+        padding-top:50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form00{
+        display: flex;
+        width: 100%;
+
+
+
+        .boxCalcul{
+            width: calc(70% - 20px);
+            margin-right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+            span{
+                margin-right:10px;
+                margin-bottom:10px;
+            }
+
+            select{
+                margin-bottom:10px;
+                margin-right: 10px;
+            }
+
+            input[type=text]{
+                padding: 2px 5px;
+                margin-right:5px;
+                margin-left:5px;
+    border-radius: 15px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #3ED17D;
+    transition-duration: 0.4s;
+                width:40px;
+            }
+
+            .StyleInput{
+                max-height: none;
+            }
+        }
+        
+        .boxResult{
+            padding-left:20px;
+            border-left: 2px solid $colorgreen2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            article{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 2px solid $colorgreen2;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-family: Poppins SemiBold;
+            }
+
+            .select01{
+                padding:0 15px;
+                margin-bottom: 10px;
+                font-size: $fontSize03;
+                width: 100%;
+            }
+           
+        }
+
+        select:first-child{
+            margin:0 10px;
+        }
+    }
+}

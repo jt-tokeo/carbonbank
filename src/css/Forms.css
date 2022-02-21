@@ -1,0 +1,585 @@
+/** universal **/
+
+/* textarea:focus, input:focus{
+    outline: none;
+    border:black 2px solid;
+} */
+
+/* div label{
+    display:flex;
+    flex-direction: row;   
+} */
+
+
+
+/** universal ** input **/
+.formInputButton{
+    width:300px;
+}
+
+.formInputButton input, .formInputButton textarea, .formInputButton button{
+    color: black;
+    font-size: 16px;
+    background-color:transparent;
+    border-radius: 50px;
+    border:2px solid black;
+
+    height:50px;
+    width:calc(100% - 20px);
+    padding-left: 20px;
+}
+
+.formInputButton div textarea{
+    height:240px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.formInputButton div{
+    margin-bottom: 40px;
+}
+
+.inputButtonHover{
+    padding: 0 20px;
+    text-align: center;
+    border:2px solid #2C55A7 !important;
+    width:100% !important;
+}
+
+.inputButtonHover:hover{
+    background-color: #2C55A7;
+    color:white;
+    border-color: #2C55A7;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* ::placeholder {
+    color: white;
+    opacity: 1; 
+} */
+
+/* input:focus ::placeholder{
+    color: black;
+    opacity: 1; 
+} */
+
+/** universal ** input ** black **/
+
+.formInputButtonBlack input, .formInputButtonBlack textarea, .formInputButtonBlack button{
+    border-color:black;
+}
+
+/** Border input style ** black ***/
+
+.borderStyle{
+    color: black;
+    font-size: 16px;
+    background-color:transparent;
+    border-radius: 50px;
+    border:2px solid black;
+
+    height:50px;
+    text-align: center;
+}
+
+/* Input form Style */
+
+/* input{
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    height: 47px;
+    width: calc(100% - 20px);
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 20px;
+    box-shadow: none;  
+} */
+
+/* Label style after Input field is in focus. Can also use input:focus ~ label to select sibling. */
+ 
+/* div input:focus + label, div input:valid + label{
+    font-size: 12px;
+    top: -5px;
+    left:30px;
+    padding: 0px 8px 0px 12px;
+} */
+
+/* div textarea:focus + label, div textarea:valid + label{
+    font-size: 12px;
+    top: -5px;
+    left:30px;
+    padding: 0px 8px 0px 12px;
+} */
+
+/* .input_wrap div{
+    height:auto;
+    position:relative;
+} */
+
+/* .input_wrap div label {
+  padding: 5px 10px;
+  position: absolute;
+  top: 7px;
+  left: 28px;
+  transition:0.4s ease all; 
+  -moz-transition:0.4s ease all; 
+  -webkit-transition:0.4s ease all;
+  pointer-events: none;
+  font-size:14px;    
+} */
+
+/* input:focus {
+    outline:none;
+} */
+
+/** hover hover label : background yellow **/
+
+/* .input_wrapYellow div label{
+    background-color: #efd423;
+    color: #ffffff;
+} */
+/* 
+.input_wrapYellow input:focus + label, .input_wrapYellow input:valid + label{
+    background-color: #efd423;
+    color: #ffffff;
+} */
+
+/* .input_wrapYellow div:hover label{
+    color:#2C55A7;
+} */
+
+/** hover hover label : background green **/
+
+/* .input_wrapGreen div label{
+    background-color: #59E170;
+    color: black;
+    border-color:#59E170;
+} */
+
+/* .input_wrapGreen input:hover + label, .input_wrapGreen input:valid + label {
+    background-color: #59E170;
+    color: black;
+} */
+/* 
+.input_wrapGreen div:hover label{
+    color:black;
+} */
+
+/** hover hover label : background blue **/
+
+/* .input_wrapBlue div label{
+    background-color: #62C6C9;
+    color: black;
+} */
+
+/* .input_wrapBlue input:hover + label, .input_wrapBlue input:valid + label {
+    background-color: #62C6C9;
+    color: black;
+} */
+
+/* .input_wrapBlue div:hover label{
+    color:#efd423;
+} */
+
+/** hover hover label : background transparent **/
+
+/* .input_wrapWhite div label{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+} */
+
+/* .input_wrapWhite input:hover + label, .input_wrapBlue input:valid + label {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+} */
+
+/* .input_wrapWhite div:hover label{
+    color:#2C55A7;
+} */
+
+
+  
+
+/** universal ** input ** input black **/
+.inputBlack input{
+    border-color: black;
+}
+
+.inputBlack input:focus{
+    border-color:#2C55A7;
+}
+
+.inputBlack ::placeholder{
+    color: black;
+}
+
+.inputBlack:focus ::placeholder{
+    color:#2C55A7;
+}
+
+/** connection **/
+
+.connectBox{
+    margin-top: 60px;
+    height:calc(100vh - 240px);
+    background-color: #EFD423;
+    justify-content: center;
+}
+
+.connectBox h5{
+    color:white;
+    margin-bottom:100px;
+}
+
+.connectBox form{
+    width:300px;
+}
+
+.connectBox label{
+    margin-bottom:50px;
+}
+
+
+/** connection ** cloud **/
+
+.cloudConnect1{
+    top:50vh;
+    left:10vw;
+    width: 180px;
+}
+
+.cloudConnect2{
+    top:30vh;
+    right:20vw;
+    width: 210px;
+}
+
+.cloudConnect3{
+    top:70vh;
+    left:20vw;
+    width: 300px;
+}
+
+.cloudConnect4{
+    top:55vh;
+    right:20vw;
+    width: 90px;
+}
+
+/** connection ** connectBoxSubmit ***/
+
+.boxSubmit{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxSubmit{
+    text-align: center;
+}
+
+.boxSubmit label{
+    width:45%;
+}
+
+.boxSubmit input{
+    padding: 0;
+    width: 100%;
+}
+
+/** contact **/
+/*info investor **/
+
+.infoContact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+
+    background-image:url("../media/img/img_landscape_wood_02.jpg");
+    background-position-y:60%;
+}
+
+.infoContact p{
+    width:60%;
+    margin-top: 40px;
+    font-size:  25px;
+    color:white;
+}
+
+.infoContact p:last-child{
+    margin-top: 30px;
+    font-size:20px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.formContact{
+    background-color:#efd423;
+}
+
+.formContact form{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formContact form div:nth-child(1){
+    margin-right:20px;
+    width:calc(50% - 20px);
+}
+
+.formContact form div:nth-child(4){
+    margin-right: 10px;
+    width: calc(50% - 14px);
+}
+
+.divRadio{
+    border: 2px solid white;
+    border-radius: 15px;
+    width: calc(50% - 4px);
+    padding: 20px 0;
+}
+
+.divRadio p:first-child{
+    margin-bottom: 20px;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:white;
+}
+
+.divRadio p:nth-child(n+2){
+    position: absolute;
+    margin-top: -60px;
+    left:47%;
+}
+/*
+.divRadio input{
+    appearance:unset;
+    width: 70%;
+    margin-bottom: 20px;
+}
+*/
+
+/* input[type="radio"]:hover {
+    background-color:#2C55A7;
+    border-color: #2C55A7;
+    cursor: pointer;
+    transition-duration: 0.4s;
+} */
+
+.divRadio:hover p{
+    color:white;
+}
+
+.divRadio:hover p:first-child{
+    color:#2C55A7;
+    transition-duration: 1s;
+}
+
+
+/** contact ** cloud **/
+
+.cloudContact1{
+    top:70vh;
+    left:5vw;
+    width: 130px;
+}
+
+.cloudContact2{
+    top:90vh;
+    left:12vw;
+    width: 180px;
+}
+
+.cloudContact3{
+    top:120vh;
+    right:4vw;
+    width: 250px;
+}
+
+.cloudContact4{
+    top:128vh;
+    right:4vw;
+    width: 90px;
+}
+
+/************************/
+/*** project deposite ***/
+
+.depositInfo{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #C7F9CC;
+}
+
+
+/** donation **/
+
+.sectionDonate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    background-color: #62C6C9;
+    height:120vh;
+    background-image:url(../media/img/img_landscape_wood_01.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.sectionDonate h3{
+    color:white;
+}
+
+.sectionDonate h4{
+    color:white;
+}
+
+.formDonate{
+    width:60%;
+    margin-top: 60px;
+    padding: 50px 40px;
+
+    background-image:url(../media/img/img_landscape_wood_01.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+    border-radius: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    transition-duration: 1s;
+}
+
+.formDonate:hover{
+    background-image:url(../media/img/img_landscape_wood.jpg);
+}
+
+.donateName input{
+    width: 80%;
+}
+
+.donateBoxInfo{
+    width:100%;
+    display: flex;
+
+}
+
+/** donation ** donation info name **/
+
+.donateName{
+    width:50%;
+}
+
+/** donation ** donation amount **/
+
+.donateAmount{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.donateAmount span{
+    height:20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    color:white;
+    border: 2px solid white;
+}
+
+.donateAmount span:focus, .donateAmount span:hover{
+    cursor: pointer;
+    background-color: #EFD423;
+    border-color:#EFD423;
+    transition-duration: 0.4s;
+}
+
+.donateAmount h4{
+    text-align: center;
+    height:30px;
+}
+
+.selectAmount{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+/** donation ** donation Card info **/
+
+
+.donateCard{
+    width: calc(100% - 60px);
+    padding:20px 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: #EFD423;
+}
+
+.donateCardTop{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donateCardTop div{
+    width:47%;
+}
+
+.donateCard h4{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.donateCard div:nth-child(3){
+    margin-right: 20px;
+}
+
+.donateCardSend{
+    width:100%;
+    margin-top:40px;
+}
+
+
+/*  modificaiton forms  */
+
+.modForm {
+    background-color: #EFD423;
+}
+.modForm input{
+    background-color: #EFD423;
+}
+
+/** who are we **/
+
+.whoAre{
+    height:100vh;
+}
+
+
+
+
+
+
+
+
+
+

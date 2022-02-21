@@ -1,0 +1,55 @@
+.certificate-header{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 5vw;
+        height: 14vh;
+        margin-right: 80px;
+    }
+    p{
+        font-size: 19px;
+    }
+    p:first-child{
+        margin: 20px 0;
+    }
+}
+
+.certificate-content{
+    img{
+        width: 100%;
+        height: 25vh;
+        padding-right: 1vw;
+        margin: 25px 0;
+    }
+    p{
+        font-size: 19px;
+    }
+    p:last-child{
+        margin-top: 8vh;
+    }
+}
+
+.certificate-footer{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    p{
+        word-wrap: break-word;
+        font-size: 15px;
+        margin-top: 5vh;
+        width: 40ch;
+        text-align: center;
+    }
+    .new-aqui{
+        width: 6vw;
+        height: 6vh;
+        margin: 10px;
+        margin-top: 8vh;
+    }
+    .sign{
+        width: 5;
+        height: 15vh;
+        margin: 10px;
+
+    }
+}

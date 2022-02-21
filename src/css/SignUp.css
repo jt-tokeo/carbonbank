@@ -1,0 +1,118 @@
+/** sign up **/
+/** sign up ** invest **/
+
+.h4signUp{
+    margin-bottom:8px !important;
+}
+
+.signInfoInvestor{
+    flex-direction: column;
+}
+
+.signInfoInvestor section{
+    width:80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.signInfoInvestor article{
+    width:30%;
+    padding-bottom:50px; 
+    border-radius: 15px;
+    text-align: left;
+}
+
+.signInfoInvestor article ul{
+    margin: 20px 0 20px 0;
+}
+
+.signInfoInvestor article ul li{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.signInfoInvestor article a:hover{
+    color:red;
+}
+
+.signInfoInvestor h5{
+    color:#2C55A7;
+    margin: 20px 0 20px 0;
+}
+
+.boxImg{
+    height:190px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.boxImg1{
+    background-image: url(../media/img/invest_companies.jpg);
+}
+
+.boxImg2{
+    background-image: url(../media/img/Invest_councils.jpg);
+}
+
+.boxImg3{
+    background-image: url(../media/img/marketplace.jpg);
+}
+
+/** sign up ** form **/
+
+.signInvestor{
+    background-color:#EFD423;
+}
+
+.signInvestor h5{
+    margin-bottom: 50px;
+}
+
+.signInvestor label{
+    margin-bottom: 30px;
+}
+
+/***** cloud *****/
+
+.cloudSign1{
+    width:250px;
+    top:250%;
+}
+
+.cloudSign2{
+    width:200px;
+    top:240%;
+    right:80px;
+}
+
+.cloudSign3{
+    width:25vw;
+    top:260%;
+    left:15%;
+}
+
+.cloudSign4{
+    width:20vw;
+    top:280%;
+    right:15%;
+}
+
+
+/*** house **/
+
+.houseSign1{
+    margin-top: 30px;
+}
+
+.houseSign1 img{
+    width:60%;
+    bottom:-250vh;
+    right:15%;
+    transform: rotate(4deg);
+}

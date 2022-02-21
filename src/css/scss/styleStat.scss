@@ -1,0 +1,240 @@
+/***container stat***/
+
+.boxStat00{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**container graph**/
+
+.boxGraph00{
+    display: flex;
+    flex-direction: column;
+    @extend .stylegraph;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+
+
+
+.boxGraph00Text{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    span{
+        color:$colorgreen2;
+    }
+
+    div{
+        margin: 0 5px;
+        @extend .pictoCenter20;
+        background-image: $pictoarrowup0;
+    }
+
+    p{
+        font-family: Poppins Regular;
+        font-size: $fontSize01;
+    }
+}
+
+/**stat style box shadow***/
+
+.stylegraph{
+    @extend.boxShadow01;
+    border-radius: $borderRadius15;
+}
+
+
+.stat00 {
+    @extend .stylegraph;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    width: calc(30% - 20px);
+    min-width: 100px;
+    height: 120px;
+    
+    h5 {
+        font-family: Poppins Regular;
+        font-size: $fontSize01;
+        color:$color03;
+    }
+
+    p {
+        font-family: Poppins SemiBold;
+        font-size: $fontSize05;
+        color: $colorgreen2;
+        text-align: center;
+    }
+}
+
+.stylegraphPrice00{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    height:200px;
+    width: 100%;
+}
+
+.graph00{
+    @extend .stylegraphPrice00;
+    background-image: $picture_test_graph_01;
+
+}
+
+.graph01{
+    @extend .stylegraphPrice00;
+    background-image: $graph_01;
+}
+
+.graph02{
+    @extend .stylegraphPrice00;
+    background-image: $graph_price_years_01;
+}
+
+.stat01{
+    @extend .stylegraph;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(70% - 20px);
+    min-width: 100px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    padding:10px;
+
+    h5{
+        margin-left: 20px;
+        color:$colorgreen0;
+        font-size: $fontSize03;
+    }
+
+    .keyBox00{
+        padding:10px;
+        width: calc(100% - 20px);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        height:60px;
+        background-color: $colorgreen3;
+        border-radius: $borderRadius15;
+
+        h6{
+            font-size: $fontSize01;
+            font-family: Poppins Regular;
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid $colorgreen0;
+            margin-right: 15px;
+
+            &:before{
+                @extend .iconBefore01;
+                margin-bottom: 5px;
+            }
+        }
+
+        .keyboxSandbox:before{
+            background-image: $pictosandbox0;
+        }
+
+        .keyboxProduc:before{
+            background-image: $pictoproduction0;
+        }
+
+        p{
+            font-size: $fontSize02;
+            font-family: Poppins Regular;
+        }
+
+        .keybox00number{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width:calc(100% - 90px);
+
+            button{
+                margin-left: 5px;
+            }
+            a{
+                color: #2a836e;
+            }
+        }
+    }
+}
+
+
+.stat02{
+    @extend .stat01;
+    margin-left: 10px;
+    width:calc(30% - 30px);
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        margin-top: 20px;
+    }
+
+    .keyboxDoc{
+        background-image: $pictodocumentation0;
+    }
+}
+
+/**boxmap**/
+
+.boxMap00{
+    display: flex;
+}
+
+.boxGraph01{
+    @extend .stylegraph;
+    width:100%;
+    height:250px;
+    
+    .boxTitle{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding:10px;
+
+        div{
+            display: flex;
+            flex-wrap: nowrap;
+            p{
+                font-family: Poppins SemiBold;
+                color: $colorgreen0;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .boxGraph{
+        @extend .graphSize;
+        background-image: $graph_00;
+    }
+}
+
+
+/***import graph img***/
+
+.graphSize{
+    background : {
+        position: left;
+        repeat:no-repeat;
+        size:100%;
+    }
+    height:250px;
+    width: 100%;
+}
+
+.graphUsers00 {
+    background-image: $graph_00;
+}

@@ -1,0 +1,48 @@
+.compensation h5, .compensationPrincipe h5, .compensationRule h5{
+    width: 100%;
+    background-color: blueviolet;
+    padding:50px 20%;
+}
+
+
+/** compensation **/
+
+.compensation{
+    background-image: url("../media/img/img_landscape_wood_03.jpg");
+    height:50vh;
+    color:white;
+}
+
+.compensation p{
+    margin-top: 30px;
+    padding:20px;
+    border-radius: 15px;
+    background-color: #2C55A7;
+}
+
+/** compensation ** principe **/
+
+
+.compensationPrincipe{
+    padding: 0;
+    flex-direction: row;
+}
+
+.compensationPrincipe article{
+    display: flex;
+    flex-direction: column;
+    width: calc(30% - 20px);
+    padding:10px;
+    text-align: left;
+}
+
+.compensationPrincipe div{
+    width: 70%;
+}
+
+/** compensation ** rules **/
+
+.compensationRule{
+    padding: 0;
+    flex-direction: row;
+}

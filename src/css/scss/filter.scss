@@ -1,0 +1,60 @@
+.filter00_3{
+    display:flex;
+    flex-wrap:nowrap;
+    //margin-bottom: 20px;
+    align-items: center;
+    border-top-left-radius: $borderRadius15;
+    border-top-right-radius:$borderRadius15;
+    overflow: auto;
+    width:100%;
+
+    a, li{
+        display: flex;
+        align-items: center;
+        background-color: $colorgreen3;
+        color:$colorgreen0;
+        padding:2px 0;
+        padding-left:30px;
+        width: calc((100% - 30px) / 3);
+        font-size: $fontSize02;
+        font-family: Poppins Regular;
+        min-height: 40px;
+
+        &:hover{
+            background-color: $colorgreen1;
+            font-family: Poppins SemiBold;
+            color:$colorwhite;
+            cursor: pointer;
+        }
+
+        &:active{
+            background-image: $colorgreen1
+        }
+    }
+}
+
+.filter00_2{
+    @extend .filter00_3;
+    margin: 0;
+    a{
+        width: calc(50% - 20px) !important;
+    }
+}
+
+.navDiag{
+    background-color: $colorgreen2 !important;
+    font-family: Poppins SemiBold !important;
+    color:$colorwhite !important;
+}
+
+.navfilter00{
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: $borderRadius15;
+    background-color: $colorgreen3;
+
+    button, select{
+        margin-right:10px;
+    }
+
+}

@@ -1,0 +1,246 @@
+.sectionMapProject{
+    margin-top: 60px;
+    background-image:url("../media/img/img_landscape_wood_02.jpg");
+    color:white;
+}
+
+/** map **/
+
+.sectionProject{
+    height:100vh;
+}
+
+/**map**/
+
+.MapProject{
+    width:100%;
+    height:100%;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.leaflet-container {
+    width : 100%;
+    height: 100%;
+    z-index:2 !important;
+}
+/*
+.listeProjets{
+    width: 400px;
+    height:calc(100vh - 20px);
+    margin:10px 0;
+    overflow-y: auto;
+    position:absolute;
+    right:20px;
+    z-index: 20;
+}
+
+.listeProjets div.currentProject{
+    background-color:#EFD423;
+
+    overflow: hidden;
+    transition-duration:0.4s;
+    color:black;    
+}
+/*
+.projectCard{
+    background-color:white;
+    margin:0 10px 15px 10px;
+    border: 0;
+    border-radius:15px;
+    height:510px;
+    width:calc(100% - 20px);
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.projectCard:hover{
+    cursor: pointer;
+}
+
+
+/** projectCard **/
+/** projectCard ** img **/
+.projectCardImg{
+    width:100%;
+    height:43%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.projectCardImg img{
+   height:120%; 
+}
+
+
+/** projectCard ** img ** text **/
+/*
+.projectCardImgText{
+    margin-top: -200px;
+    padding: 10px;
+    color:white;
+}
+
+.projectCardImgText p{
+    font-size: 18px;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.projectCardImgText p:first-child{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/** projectCard ** text **/
+/*
+.projectCardTitle{
+    width: calc(100% - 20px);
+    padding:10px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectCardTitle{
+    padding:10px 30px;
+    width: calc(100% - 60px);
+}
+*/
+ 
+ .projectCardTitle .h3P{
+     font-size: 18px;
+     width:100%;
+ }
+
+.bblack{
+    background-color: red;
+}
+
+/**projectCardText**/
+
+.projectCardText{
+    margin: 10px 20px;
+    border-top: 2px solid;
+    width: calc(100% - 52px);
+    height:180px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectCardTextCollected{
+    width: 60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid black;
+}
+
+.projectCardTextCollected p {
+    padding-top: 18px;
+    text-align: center;
+}
+/*
+.projectCardTextList, .projectCardTextList2{
+    height:100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.projectCardTextList{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.projectCardTextListPicto{
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+.projectCardTextListPicto div{
+    background-image: url("../media/picto/picto_time_01.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    margin-right: 10px;
+
+    width:21px;
+    height:21px ;
+}
+
+.projectCardTextList p{
+    font-size: 12px;
+    margin-bottom: 10px;
+
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+*/
+.projectCardTextList p strong{
+    color:#2C55A7;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/** projectCardTextList2 **/
+/*
+.projectCardTextList2{
+    width:calc(50% - 20px);
+    margin-left: 20px;
+}
+
+.projectCardTextList2 p{
+    border-radius: 15px;
+    border:2px solid #2C55A7;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectCardTextList2 p strong{
+    color:#2C55A7;
+    font-size: 16px;
+}
+
+
+ /** projectCardText ** link **/
+
+ .projectCard a p{
+     margin-top: 10px;
+     padding: 10px;
+     text-align: center;
+     border-radius: 15px;
+     color:black;
+     width:100%;
+     border: 1px solid black; 
+
+     transition-duration:0.4s;
+}
+
+ .projectCard a p:hover{
+    border: 1px solid white; 
+    color:white;
+    background: rgb(44,85,167);
+    background: -moz-linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: -webkit-linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c55a7",endColorstr="#62c6c9",GradientType=1);
+ }
+
+

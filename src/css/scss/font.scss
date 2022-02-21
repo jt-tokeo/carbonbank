@@ -1,0 +1,212 @@
+/*************************************/
+/*********************variable*font*/
+
+$fontSize00: 10px;
+$fontSize01: 12px;
+$fontSize02: 14px;
+$fontSize03: 18px;
+$fontSize04: 20px;
+$fontSize05: 24px;
+
+/*************************************/
+/*********************import*font*/
+
+@font-face {
+    font-family: "Akira Expanded";
+    src: url("../../media/font/AkiraExpanded.woff2") format("woff2"),
+        url("../../media/font/AkiraExpanded.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Akira Expanded";
+    src: url("../../media/font/AkiraExpanded-Outline.woff2") format("woff2"),
+        url("../../media/font/AkiraExpanded-Outline.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Akira Expanded";
+    src: url("../../media/font/AkiraExpanded-Bold.woff2") format("woff2"),
+        url("../../media/font/AkiraExpanded-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url("../../media/font/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../../media/font/Poppins-Regular.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*************************************/
+/*********************class*font*/
+
+.fontNatif01{
+    font: {
+        family: forma-djr-micro, sans-serif;
+        style: normal;
+    }
+    color:$colorgreen0;
+}
+
+.fontAkiraBold{
+    font: {
+        family: "Akira Expanded",forma-djr-micro, sans-serif;
+        style: normal;
+    }
+}
+
+h1{
+    @extend .fontAkiraBold;
+    font: {
+        weight: bold;
+        size: 100px;
+    }
+    color: $colorgreen0;
+}
+
+.h1P{
+    @extend .fontAkiraBold;
+    font: {
+        size:20px;
+        weight: bold;
+    }
+    color:$colorblack;
+    margin:50px 0;
+}
+
+h2{
+    @extend .fontAkiraBold;
+    font: {
+        weight: bold;
+        size: 40px;
+    }
+}
+
+h3{
+    @extend .fontAkiraBold;
+    font: {
+        weight: bold;
+        size: 28px;
+    }
+    color:$colorgreen0;
+    margin-bottom: 20px;
+}
+
+h4{
+    @extend .fontNatif01;
+    font: {
+        weight: 700;
+        size: 24px;
+    }
+}
+
+h5{
+    @extend .fontNatif01;
+    font: {
+        weight: 700;
+        size: 19px;
+    }
+    margin-bottom:20px;
+    text-align: center;
+    color:$colorblack;
+}
+
+
+.fontP{
+    @extend .fontNatif01;
+    font: {
+        weight: 700;
+    }
+    color:$colorblack;
+
+    li{
+        list-style: circle
+    }
+}
+  
+p{
+    @extend .fontP;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plite{
+    @extend .fontP;
+    font: {
+        size:17px;
+        weight: 300;
+    }
+}
+
+.plite02{
+    @extend .fontP;
+    font: {
+        size:13px;
+        weight: 300;
+    }
+}
+
+.pAcrrocheBig{
+    @extend .fontNatif01;
+    font-size: 22px;
+    color:$colorblack;
+    font-weight: 600;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+@media (max-width: $screen-1) {
+    h1{
+        font-size: 70px;
+    }
+    .h1P{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    h5{
+        margin-bottom:10px;
+    }
+}
+
+@media (max-width: $screen-2) {
+    h1{
+        font-size: 40px;
+    }
+    .h1P{
+        font-size: 15px;
+    }
+}
+
+/**poppins class**/
+
+
+.pAcrrocheBig02{
+    font-family: Poppins SemiBold,forma-djr-micro, sans-serif;
+    font-size: 22px;
+    color:$colorblack;
+    font-weight: 600;
+}

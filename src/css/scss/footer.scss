@@ -1,0 +1,20 @@
+footer {
+    @extend .fontAkiraBold;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    color:white;
+    font-size: 9px;
+}
+
+footer a{
+    color: #ffffff;
+    font-weight: bold ;
+    margin-left:50px;
+}
+
+.footerNav{
+    margin-left:50px;
+    font-size: 14px;
+    font-weight: 300 ;
+}

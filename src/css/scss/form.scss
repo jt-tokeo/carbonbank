@@ -1,0 +1,301 @@
+// form {
+//     input,
+//     textarea,
+//     button {
+//         color: $colorblack;
+//         border-radius: 15px;
+//         background-color: $color04;
+//         border: 1px solid $borderColor;
+
+//         height: 35px;
+//         width: calc(100% - #{$paddingInput});
+//         padding-left: $paddingInput;
+//     }
+
+//     textarea {
+//         height: 90px;
+//         padding-left: 0;
+//         width: 100%;
+//     }
+
+//     div {
+//         height: auto;
+//         position: relative;
+
+//         textarea:focus + label,
+//         textarea:valid + label {
+//             font-size: 12px;
+//             top: -5px;
+//             left: 30px;
+//             padding: 0px 8px 0px 12px;
+//         }
+
+//         input {
+//             appearance: unset;
+//             &:focus {
+//                 outline: none;
+//             }
+//             &:focus + label,
+//             &:valid + label {
+//                 font-size: 12px;
+//                 top: -5px;
+//                 left: 30px;
+//                 padding: 0px 8px 0px 12px;
+//             }
+//         }
+
+//         label {
+//             @extend .fontNatif01;
+//             color: $colorblack;
+//             background-color: $colorwhite;
+
+//             padding: 5px 10px;
+//             position: absolute;
+//             top: 12px;
+//             left: 28px;
+//             transition: 0.4s ease all;
+//             -moz-transition: 0.4s ease all;
+//             -webkit-transition: 0.4s ease all;
+//             pointer-events: none;
+//         }
+//     }
+
+//     .divRadio {
+//         border: 2px solid $borderColor;
+//         border-radius: 15px;
+//         padding: 20px 0;
+
+//         &:hover {
+//             background-color: $colorgreen0;
+//             border-color: $borderColor;
+//             cursor: pointer;
+//             transition-duration: 0.4s;
+//         }
+
+//         &:hover p {
+//             color: $colorwhite;
+//             transition-duration: 1s;
+//         }
+
+//         &:hover input {
+//             border-color: $colorwhite;
+//         }
+
+//         &:hover input p {
+//             color: $colorwhite;
+//         }
+
+//         input {
+//             margin-bottom: 20px;
+//         }
+
+//         p {
+//             @extend .fontNatif01;
+
+//             &:first-child {
+//                 margin-bottom: 20px;
+//             }
+
+//             &:nth-child(n + 2) {
+//                 position: absolute;
+//                 margin-top: -60px;
+//                 left: 47%;
+//             }
+//         }
+//     }
+// }
+
+.boxForm90 {
+    height: 90px;
+}
+
+/** imput**/
+
+.input0 {
+    border: 1px solid $colorblack;
+    border-radius: $borderRadius15;
+    color: $colorblack;
+    font-size: 10px;
+    p {
+        padding: 0 3px;
+        font-size: 15px;
+    }
+}
+
+.input01 {
+    @extend .input0;
+    margin: -1px -2px;
+    border-radius: #{$borderRadius15 + 2};
+    font-size: 15px;
+    &:focus {
+        border-width: 1px;
+    }
+}
+
+.input02 {
+    @extend .input0;
+}
+
+.formOffset {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: $borderRadius15;
+    padding: 10px;
+}
+
+/***input ***/
+
+.boxInput00 {
+    background-color: $colorgreen3;
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 35px;
+    border-radius: $borderRadius15;
+    margin-bottom: 20px;
+
+        select{
+            margin-right: 7px;
+        }
+
+        input[type=text]{
+            text-align: right;
+        }
+    // input {
+    //     height: auto;
+    //     border-radius: $borderRadius15;
+    //     background-color: $colorgreen3;
+    //     padding-right: 10px;
+
+    //     &::placeholder {
+    //         text-align: right;
+    //         color: $colorgreen0;
+    //         font-size: $fontSize02;
+    //         font-family: Poppins SemiBold;
+    //         opacity: 1;
+    //     }
+    // }
+}
+
+/***box account info***/
+
+.boxaccountTable {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px !important;
+    width: calc(100% - 20px);
+
+    .boxInfo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $colorgreen3;
+        color: $colorwhite;
+        border-radius: $borderRadius15;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        width: calc(100% - 20px);
+
+        div {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: calc(70% - 20px);
+        }
+
+        h6 {
+            color: $colorgreen0;
+            margin-right: 20px;
+            font-size: $fontSize02;
+            width: 30%;
+        }
+
+        p {
+            font-size: $fontSize02;
+            font-family: Poppins Regular;
+            max-width: calc(100% - 50px);
+            overflow-x: auto;
+        }
+
+        .pictoEdit {
+            $size00: 17px;
+            background : {
+                size: $size00;
+                repeat: no-repeat;
+            }
+            width: $size00;
+            height: $size00;
+            background-image: $pictoedit0;
+            margin-left: 20px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/***input + label ***/
+
+.StyleInput {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $colorgreen2;
+    border-radius: $borderRadius15;
+    padding-left: 10px;
+    font-size: $fontSize03;
+    max-width: 400px;
+    max-height: 30px;
+    
+        label{
+            font-size: 14px;
+            color: white;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+          text-align: right;
+          width: 50%;
+          margin-right: 10px;
+        }
+
+
+    // label{
+    //     width:200px;
+    //     position:unset !important;
+    //     background-color:transparent;
+    //     font-family: Poppins SemiBold;
+    // }
+
+    // input {
+    //     background-color: $colorgreen0;
+    //     color:$colorgreen3;
+    //     font-size: $fontSize03;
+    //     font-family: Poppins SemiBold;
+    //     height: 100%;
+    //     width:120px;
+
+    //     &::-webkit-outer-spin-button,
+    //     &::-webkit-inner-spin-button {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+
+    //     &::placeholder {
+    //         color: red !important;
+    //         opacity: 1; /* Firefox */
+    //       }
+    // }
+}
+.InputLogin.Mui-focused{
+color: #3ED17D;
+}

@@ -1,0 +1,508 @@
+/** global **/
+
+.sectionMoney, .sectionOperation, .sectionGraph{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/** global ** font **/ 
+
+.bigboxWalletInvestor h6{
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 200;
+    color:black;
+    font-size: 18px;
+}
+
+.bigboxWalletInvestor p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+     
+}
+
+
+/** global ** style box black gradient **/
+
+.BoxStyleBlack{
+    border-radius: 20px;
+    font-size: 16px;
+    color:white;
+
+    background: rgb(39,42,46);
+    background: -moz-linear-gradient(54deg, rgb(216 215 215) 0%, rgb(247 247 247) 100%);
+    background: -webkit-linear-gradient(54deg, rgb(216 215 215) 0%, rgb(247 247 247) 100%);
+    background: linear-gradient(54deg, rgb(216 215 215) 0%, rgb(247 247 247) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#272a2e",endColorstr="#393939",GradientType=1);
+
+    -webkit-box-shadow: 5px 3px 15px 8px rgba(204, 204, 204, 0.14); 
+    box-shadow: 5px 3px 15px 8px rgba(204, 204, 204, 0.14);
+}
+
+
+.BoxStyleBlackLite{
+    border-radius: 20px;
+    font-size: 16px;
+    color:white;
+
+    background: rgb(59,59,59);
+    background: -moz-linear-gradient(300deg, rgb(255 255 255) 0%, rgb(179 177 177) 100%);
+    background: -webkit-linear-gradient(300deg, rgb(255 255 255) 0%, rgb(179 177 177) 100%);
+    background: linear-gradient(300deg, rgb(255 255 255) 0%, rgb(179 177 177) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3b3b",endColorstr="#2a2929",GradientType=1);
+
+    -webkit-box-shadow: 5px 3px 15px 8px rgba(0,0,0,0.14); 
+    box-shadow: 5px 3px 15px 8px rgba(0,0,0,0.14);
+}
+
+/*** global ** submit style **/
+
+.submitStyleBlue{
+    border-radius: 20px;
+    font-size: 16px;
+    color:white;
+
+    background: rgb(44,85,167);
+    background: -moz-linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: -webkit-linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: linear-gradient(54deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c55a7",endColorstr="#62c6c9",GradientType=1);
+}
+
+.submitStyleBlue:hover{
+    cursor:pointer;
+
+    transition-duration: 1s;
+    background: rgb(44,85,167);
+    background: -moz-linear-gradient(300deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: -webkit-linear-gradient(300deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    background: linear-gradient(300deg, rgba(44,85,167,1) 0%, rgba(98,198,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c55a7",endColorstr="#62c6c9",GradientType=1);
+}
+
+
+/** global ** historique **/
+
+.boxHistoriqueHLimite{
+    height:calc(100% - 50px);
+    overflow-y: auto;
+    
+}
+
+.boxHistorique{
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    border-radius: 20px;
+    font-size: 16px;
+    color:white;
+
+    background: rgb(59,59,59);
+    background: -moz-linear-gradient(300deg, rgb(234 227 227) 0%, rgb(204 204 204) 100%);
+    background: -webkit-linear-gradient(300deg, rgb(234 227 227) 0%, rgb(204 204 204) 100%);
+    background: linear-gradient(300deg, rgb(234 227 227) 0%, rgb(204 204 204) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3b3b",endColorstr="#2a2929",GradientType=1);
+}
+
+.boxHistorique div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.boxHistoriqueStart{
+    margin-right:10px;
+}
+
+.boxHistoriqueFinal p:first-child{
+    margin-right:10px;
+    font-size:28px;
+    color:black;
+}
+
+.boxHistoriqueFinal p:last-child{
+    color:black;
+}
+
+
+.boxHistorique .boxHistoriqueDate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height:30%;
+
+}
+
+.boxHistoriqueDate p{
+    font-size: 13px !important;
+    color:black;
+}  
+
+
+/** global ** graph **/
+
+
+.boxGraph{
+    width: 100%;
+    height:calc(50% - 20px);
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+
+.graphTitle{
+    height:60px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+/** import graph**/
+
+.graphCerti img{
+    width: 100%;
+
+}
+
+.boxGraph .canvas{
+    height:calc(100% - 100px);
+}
+
+.graphTitle h6{
+    width: 100%;
+    text-align: left;
+}
+
+.graphTitle div{
+    display: flex;
+    flex-wrap: nowrap;
+    color:#EFD423;
+}
+
+.graphTitle div:nth-child(3){
+    color:#62C6C9;
+}
+
+.graphTitle div p:first-child{
+    margin-right: 10px;
+}
+
+.graphTitle div p:last-child{
+    margin-left: 10px;
+}
+
+
+/** global ** exchange **/
+
+.walletExchange{
+    margin-top: 30px;
+    width: calc(100% - 40px);
+    padding:20px;
+    padding-bottom:40px;
+
+}
+
+.walletExchange button{
+    width:100%;
+    height:60px;
+    border:0;
+}
+
+.walletExchangeInput{
+    width: calc(100% - 50px);
+    padding:10px;
+    padding-right: 40px;
+
+    border-radius: 50px;
+    height:50px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-bottom: 20px;
+}
+
+.walletExchangeInput div{
+    width: calc(100% - 80px);
+    
+}
+
+.walletExchangeInput div input{
+    background: transparent;
+    border: none;
+
+    text-align: right;
+    color:black;
+    font-size: 20px;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+
+.walletExchangeInput div input::placeholder{
+    font-size: 20px;
+    color:#F2FF77;
+}
+
+.walletExchangeToken{
+    width: 60px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/** global ** Wallet Investor ** section ** width 100 **/
+
+.bigboxWalletInvestor .sectionWalletW100{
+    width: 80%;
+}
+
+/** with padding **/
+.bigboxWalletInvestor .sectionWalletW100P{
+ width: calc(80% - 40px);
+ margin: 0;
+}
+
+/** global ** Wallet Investor ** section ** height small **/
+.bigboxWalletInvestor .sectionWalletHsmall{
+    height:46%;
+    overflow:hidden;
+}
+
+/** main **/
+.bigboxWalletInvestor{
+    display: flex;
+    padding: 90px 8% 30px 8%;
+    background-color: white;
+    height: calc(100vh - 90px);
+    width: calc(70% - 40px);
+    margin: auto;
+}
+
+/** sectionMoney **/
+
+/** sectionMoney ** balance **/
+
+.balance{
+    width: calc(100% - 40px);
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.balance div{
+    display: flex;
+}
+
+.balance p{
+    font-size: 29px;
+}
+
+.balance p:first-child, .balance p:nth-child(3){
+    margin-right: 9px;
+}
+
+/**sectionOperation **/
+
+.sectionOperation{
+    width: calc(30% - 80px);
+    height: calc(100% - 80px);
+    margin: 20px;
+    padding:20px;
+}
+
+.boxHistoriqueLimite{
+    height:calc(100% - 60px);
+    width: 90%;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/** graph **/
+
+.sectionGraph{
+    width: calc(35% - 40px);
+    height:calc(100% - 40px);
+}
+
+.BalanceEchange{
+    width:100%;
+}
+
+
+/** global ** section send **/
+
+.sectionSend{
+    width: calc(100% - 40px);
+    height:calc(50% - 40px);
+    margin: 0;
+    padding: 20px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bigboxWalletInvestor .sectionSend2{
+    height:calc(46% - 40px);
+    margin-top: 20px;
+}
+
+
+
+
+.sectionSend p:nth-child(2){
+    color:#EFD423;
+    font-size: 31px;
+    margin-right:20px;
+}
+
+.sectionSend p:nth-child(3){
+    color:#F2FF77;
+    font-size: 31px;
+}
+
+/** global ** section send ** input **/
+
+.boxInput{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.sectionSend .walletExchangeInput{
+    width: calc(100% - 160px);
+    padding-right: 10px;
+    margin:0;
+}
+
+.sectionSend .walletExchangeToken{
+    margin: 0;
+    margin-left:20px;
+}
+
+.bigboxWalletInvestor .boxInput p{
+    color:white;
+    font-size: 20px;
+}
+
+
+
+/** sectionOperation Certificate **/
+
+.bigboxWalletInvestorCertificates .sectionOperation2{
+    height:40%;
+    margin-bottom: 20px;
+}
+
+.bigboxWalletInvestor .sectionOperation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.h6Value{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.h6Value p:first-child{
+    margin-right: 30px;
+}
+
+.h6Value p{
+    color:black;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.h6Value p:last-child{
+    color:#F2FF77;
+}
+
+.sectionOperation .boxHistorique{
+    height: auto;
+    flex-wrap: nowrap;
+}
+
+.sectionOperation .boxHistorique div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.boxHistoriqueValueCo2 p{
+    font-size: 28px;
+    color:#EFD423;
+}
+
+.boxHistoriqueValueCo2 p:last-child{
+    color:#F2FF77;
+    margin-left: 4px;
+    font-size: 18px;
+}
+
+.sectionOperation .boxHistorique .boxHistoriqueDate{
+    display: flex;
+    justify-content: center
+}
+  
+
+.boxHistoriquePicto div{
+    padding: 10px 20px;
+    background-color: #303132;
+    border-radius: 10px;
+    transition-duration:0.4s;
+
+    height:19px;
+    width:20px;
+
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    transition-duration:0.4s;
+}
+
+.boxHistoriquePicto div:hover{
+    cursor: pointer;
+    background-color: #161616;
+}
+
+.boxHistoriquePicto div:first-child{
+    margin-right:10px;
+    background-image: url("../media/picto/picto_look_white_01.svg");
+}
+
+.boxHistoriquePicto div:first-child:hover{
+
+    background-image: url("../media/picto/picto_look_yellow_01.svg");
+}
+
+.boxHistoriquePicto div:last-child{
+    background-image: url("../media/picto/picto_download_white_01.svg");
+}
+
+.boxHistoriquePicto div:last-child:hover{
+    background-image: url("../media/picto/picto_download_yellow_01.svg");
+}
+
+.unitColor{
+    color:#F2FF77;
+    font-size: 31px;
+    margin-right:20px;
+}
